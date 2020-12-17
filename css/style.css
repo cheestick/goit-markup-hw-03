@@ -1,0 +1,215 @@
+:root {
+  --common-font: Roboto, sans-serif;
+  --logo-font: Raleway, sans-serif;
+
+  --main-bg-color: #ffffff;
+  --section-bg-color: #f5f4fa;
+  --footer-bg-color: #212121;
+  --blank-bg-color: #2f303a;
+  --border-separator-color: #ececec;
+  --interactive-element-color: #2196f3;
+  --button-color: #2196f3;
+  --current-page-color: #2196f3;
+  --button-filter-color: #f5f4fa;
+
+  --logo-font-color: #2196f3;
+  --logo-font-black: #000000;
+  --logo-font-white: #ffffff;
+  --lightondark-text-color: #ffffff;
+  --main-heading-color: #212121;
+  --nav-color: #212121;
+  --main-text-color: #757575;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+/* general adaptation to the design (common properties)*/
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: var(--common-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.page-footer {
+  background-color: var(--footer-bg-color);
+}
+
+.current-page {
+  color: var(--current-page-color);
+}
+
+.list-reset {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link-reset {
+  text-decoration: none;
+}
+
+/* logotype */
+.logo,
+.logo:visited {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  color: var(--logo-font-black);
+}
+
+.logo > .web {
+  color: var(--logo-font-color);
+}
+.address > .logo {
+  color: var(--logo-font-white);
+}
+
+/* footer address */
+.page-footer > address {
+  font-style: normal;
+}
+
+.address > .postal {
+  color: var(--lightondark-text-color);
+}
+
+.address .tel,
+.address .tel:visited,
+.address .email,
+.address .email:visited {
+  color: var(--footer-contacts-color);
+}
+
+/* navigation */
+.navigation .link,
+.navigation .link:visited,
+.contacts-list .link,
+.contacts-list .link:visited {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.pages-list .link {
+  color: var(--nav-color);
+}
+
+.contacts-list .link {
+  color: var(--main-text-color);
+}
+
+.pages-list .link:hover,
+.pages-list .link:focus,
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--interactive-element-color);
+}
+
+.link.current-page {
+  color: var(--interactive-element-color);
+}
+
+/* hero section */
+.hero {
+  background-color: var(--blank-bg-color);
+}
+
+.hero > h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--lightondark-text-color);
+}
+
+.hero > .button-order {
+  background-color: var(--button-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+  color: var(--lightondark-text-color);
+}
+
+/* features */
+.features-list .feature-heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-heading-color);
+}
+
+/* what do we do (directions) and team common styles */
+.directions-heading,
+.team-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--main-heading-color);
+}
+
+/* our team */
+.team {
+  background-color: var(--section-bg-color);
+}
+.teammates-list .teammate-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-heading-color);
+}
+
+.teammates-list .teammate-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* PORTFOLIO page styles */
+/* filters  */
+.filter-list .button-filter {
+  background-color: var(--button-filter-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--nav-color);
+}
+.button-filter.selected-filter {
+  background-color: var(--interactive-element-color);
+  color: var(--lightondark-text-color);
+}
+
+/* cards */
+.card .link,
+.card .link:visited {
+  color: inherit;
+}
+
+.card .card-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--main-heading-color);
+}
+
+.card .card-type {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* button cursor */
+.button-cursor:hover,
+.button-cursor:focus {
+  cursor: pointer;
+}
