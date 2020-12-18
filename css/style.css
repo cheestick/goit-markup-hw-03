@@ -50,6 +50,20 @@ body {
   text-decoration: none;
 }
 
+.page-header {
+  border-bottom: 1px solid var(--border-separator-color);
+}
+
+/* container. centering main content + top flex*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
 /* logotype */
 .logo,
 .logo:visited {
