@@ -44,6 +44,7 @@ body {
 .list-reset {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .link-reset {
@@ -62,6 +63,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  align-items: center;
 }
 
 /* logotype */
@@ -82,23 +84,18 @@ body {
   color: var(--logo-font-white);
 }
 
-/* footer address */
-.page-footer > address {
-  font-style: normal;
+.navigation .logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
-
-.address > .postal {
-  color: var(--lightondark-text-color);
-}
-
-.address .tel,
-.address .tel:visited,
-.address .email,
-.address .email:visited {
-  color: var(--footer-contacts-color);
-}
-
 /* navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .navigation .link,
 .navigation .link:visited,
 .contacts-list .link,
@@ -110,12 +107,33 @@ body {
   letter-spacing: 0.02em;
 }
 
+.pages-list {
+  display: flex;
+}
+
 .pages-list .link {
   color: var(--nav-color);
 }
 
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
 .contacts-list .link {
   color: var(--main-text-color);
+}
+
+.pages-list .link,
+.contacts-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.pages-list > .item:not(:last-child),
+.contacts-list > .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .pages-list .link:hover,
@@ -186,6 +204,22 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+}
+
+/* footer address */
+.page-footer > address {
+  font-style: normal;
+}
+
+.address > .postal {
+  color: var(--lightondark-text-color);
+}
+
+.address .tel,
+.address .tel:visited,
+.address .email,
+.address .email:visited {
+  color: var(--footer-contacts-color);
 }
 
 /* PORTFOLIO page styles */
