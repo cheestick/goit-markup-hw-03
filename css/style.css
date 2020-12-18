@@ -195,6 +195,7 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* features */
@@ -263,17 +264,57 @@ body {
 .team {
   background-color: var(--section-bg-color);
 }
+
+.team > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-heading {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.teammates-list {
+  display: flex;
+  font-size: 0;
+}
+
+.teammates-list > .item {
+  max-width: 270px;
+  background: var(--main-bg-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.teammates-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .teammates-list .teammate-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-heading-color);
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .teammates-list .teammate-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  margin: 0;
 }
 
 /* footer address */
