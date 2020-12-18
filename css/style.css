@@ -162,12 +162,9 @@ body {
 /* hero section */
 .hero {
   background-color: var(--blank-bg-color);
-}
-
-.hero > .container {
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero h1 {
@@ -186,7 +183,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 187% */
   letter-spacing: 0.06em;
   color: var(--lightondark-text-color);
 }
@@ -205,7 +201,7 @@ body {
 }
 
 /* features */
-.features-section > .container {
+.features-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -238,7 +234,7 @@ body {
 }
 
 /* what do we do (directions) and team common styles */
-.directions-section > .container {
+.directions-section {
   padding-bottom: 94px;
 }
 
@@ -269,9 +265,6 @@ body {
 /* our team */
 .team {
   background-color: var(--section-bg-color);
-}
-
-.team > .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -324,13 +317,13 @@ body {
 }
 
 /* footer address */
-.page-footer address {
-  font-style: normal;
-}
-
-.page-footer > .container {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.page-footer address {
+  font-style: normal;
 }
 
 .address > .logo {
@@ -357,7 +350,7 @@ body {
 
 /* PORTFOLIO page styles */
 /* filters  */
-.main > .container {
+.portfolio {
   padding-top: 92px;
   padding-bottom: 94px;
 }
