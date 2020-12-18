@@ -231,6 +231,9 @@ body {
 }
 
 /* what do we do (directions) and team common styles */
+.directions-section > .container {
+  padding-bottom: 94px;
+}
 
 .directions-heading,
 .team-heading {
@@ -238,6 +241,22 @@ body {
   font-size: 36px;
   line-height: 1.16;
   color: var(--main-heading-color);
+}
+
+.directions-heading {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.directions-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.directions-list > .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* our team */
