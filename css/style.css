@@ -20,6 +20,7 @@
   --nav-color: #212121;
   --main-text-color: #757575;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --card-border-color: #eeeeee;
 }
 
 .visually-hidden {
@@ -351,6 +352,30 @@ body {
 
 /* PORTFOLIO page styles */
 /* filters  */
+.main > .container {
+  padding-top: 92px;
+  padding-bottom: 94px;
+}
+
+.filter-list {
+  margin: 0;
+  margin-bottom: 52px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-list > .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-filter {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: transparent;
+}
+
 .filter-list .button-filter {
   background-color: var(--button-filter-color);
   font-weight: 500;
@@ -361,15 +386,48 @@ body {
 .button-filter.selected-filter {
   background-color: var(--interactive-element-color);
   color: var(--lightondark-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* cards */
+
+.filter-result {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.card > .link {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .card .link,
 .card .link:visited {
   color: inherit;
 }
 
+.card-info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid var(--card-border-color);
+  border-top: none;
+}
+
 .card .card-heading {
+  margin: 0;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -379,6 +437,7 @@ body {
 }
 
 .card .card-type {
+  margin: 0;
   font-size: 16px;
   line-height: 1.87;
 }
