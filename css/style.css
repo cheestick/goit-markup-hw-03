@@ -63,13 +63,16 @@ body {
   border-bottom: 1px solid var(--border-separator-color);
 }
 
-/* container. centering main content + top flex*/
+/* container. centering main content*/
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-header > .container {
   display: flex;
   align-items: center;
 }
@@ -161,7 +164,6 @@ body {
 }
 
 .hero > .container {
-  display: block;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -189,7 +191,6 @@ body {
 }
 
 .btn {
-  /* width: 200px; */
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px 32px;
@@ -198,7 +199,6 @@ body {
 
 /* features */
 .features-section > .container {
-  display: block;
   padding-top: 94px;
   padding-bottom: 94px;
 }
